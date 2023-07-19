@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="dropdown.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mystmin | Decks</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="logo">MystMin</div>
+      <ul class="list main-nav-links">
+        <li class="list-item main-nav-link"><a href="#">Home</a></li>
+        <li class="list-item main-nav-link"><a href="#">Decks</a></li>
+        <li class="list-item main-nav-link"><a href="#">Cards</a></li>
+        <li class="list-item main-nav-link"><a href="#">About</a></li>
+      </ul>
+
+      <ul class="list main-nav-socials">
+        <li class="list-item main-nav-social">
+          <a href="#"><i class="fab fa-twitch"></i></a>
+        </li>
+        <li class="list-item main-nav-social">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="list-item main-nav-social">
+          <a href="#"><i class="fab fa-discord"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="decks">
+        <div class="mtg mtg1">
+          <img src="images/mtg-blue.png" alt="" />
+        </div>
+        <div class="mtg mtg2">
+          <img src="images/mtg-purple.png" alt="" />
+        </div>
+
+        <header class="decks-header">
+          <h2>Latest Decks</h2>
+          <div class="custom-select">
+            <div class="custom-select-text">
+              <span>Historic</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="custom-select-options">
+              <span class="custom-select-option">Historic</span>
+              <span class="custom-select-option">Standard</span>
+              <span class="custom-select-option">Explorer</span>
+              <span class="custom-select-option">Alchemy</span>
+            </div>
+          </div>
+
+          <input type="checkbox" name="show-old" id="show-old" />
+          <label class="show-old" for="show-old">Old Decks</label>
+        </header>
+        <div class="decks-wrapper">
+          <div class="deck">
+            <div class="deck-image">
+              <img src="images/paradox.jpg" alt="paradox" />
+              <img src="images/tome.jpg" alt="tome" />
+              <img src="images/ring.jpg" alt="ring" />
+              <img src="images/chip.jpg" alt="chip" />
+              <img src="images/mox.jpg" alt="mox" />
+            </div>
+            <div class="deck-meta">
+              <div class="deck-info">
+                <div class="deck-colors">
+                  <img src="images/blue.png" alt="blue" />
+                  <img src="images/green.png" alt="green" />
+                  <img src="images/colorless.png" alt="colorless" />
+                </div>
+                <h3 class="deck-name">Paradox Engine</h3>
+              </div>
+              <div class="deck-rating" style="--rating: 9.5">9.5</div>
+              <div class="deck-description">
+                <span class="deck-strat">combo</span>
+                <p>Turn mana generators into sources of infinite mana.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="deck">
+            <div class="deck-image">
+              <img src="images/supreme.jpg" alt="supreme verdict" />
+              <img src="images/teferi.jpg" alt="teferi" />
+              <img src="images/narset.jpg" alt="narset" />
+              <img src="images/deluge.jpg" alt="deluge" />
+              <img src="images/snapcaster.jpg" alt="snapcaster" />
+            </div>
+            <div class="deck-meta">
+              <div class="deck-info">
+                <div class="deck-colors">
+                  <img src="images/blue.png" alt="blue" />
+                  <img src="images/white.png" alt="white" />
+                </div>
+                <h3 class="deck-name">Azorius Control</h3>
+              </div>
+              <div class="deck-rating" style="--rating: 9">9.0</div>
+              <div class="deck-description">
+                <span class="deck-strat">control</span>
+                <p>Mix of exile effects, wraths, and planeswalkers.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="deck">
+            <div class="deck-image">
+              <img src="images/snapcaster.jpg" alt="snapcaster" />
+              <img src="images/teferi.jpg" alt="teferi" />
+              <img src="images/crucias.jpg" alt="crucias" />
+              <img src="images/brotherhood.jpg" alt="brotherhood" />
+              <img src="images/tome.jpg" alt="tome" />
+            </div>
+            <div class="deck-meta">
+              <div class="deck-info">
+                <div class="deck-colors">
+                  <img src="images/blue.png" alt="blue" />
+                  <img src="images/black.png" alt="black" />
+                  <img src="images/red.png" alt="red" />
+                </div>
+                <h3 class="deck-name">Grixis Teferi</h3>
+              </div>
+              <div class="deck-rating" style="--rating: 8.3">8.3</div>
+              <div class="deck-description">
+                <span class="deck-strat">control</span>
+                <p>
+                  Outvalue the enemy while removing and countering their cards.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="deck">
+            <div class="deck-image">
+              <img src="images/jace.jpg" alt="jace" />
+              <img src="images/kethis.jpg" alt="jace" />
+              <img src="images/emry.jpg" alt="emry" />
+              <img src="images/kinnan.jpg" alt="kinnan" />
+              <img src="images/relic.jpg" alt="relic" />
+            </div>
+
+            <div class="deck-meta">
+              <div class="deck-info">
+                <div class="deck-colors">
+                  <img src="images/blue.png" alt="blue" />
+                  <img src="images/white.png" alt="white" />
+                  <img src="images/black.png" alt="black" />
+                  <img src="images/green.png" alt="green" />
+                </div>
+                <h3 class="deck-name">Kethis Combo</h3>
+              </div>
+              <div class="deck-rating" style="--rating: 9">9.0</div>
+              <div class="deck-description">
+                <span class="deck-strat">combo</span>
+                <p>A powerful graveyard combo deck.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="deck">
+            <div class="deck-image">
+              <img src="images/kroxa.jpg" alt="kroxa" />
+              <img src="images/crucias.jpg" alt="crucias" />
+              <img src="images/sheoldred.jpg" alt="sheoldred" />
+              <img src="images/fable.jpg" alt="fable" />
+              <img src="images/chandra.jpg" alt="chandra" />
+            </div>
+
+            <div class="deck-meta">
+              <div class="deck-info">
+                <div class="deck-colors">
+                  <img src="images/black.png" alt="black" />
+                  <img src="images/red.png" alt="red" />
+                </div>
+                <h3 class="deck-name">Rakdos Midrange</h3>
+              </div>
+              <div class="deck-rating" style="--rating: 9">9.0</div>
+              <div class="deck-description">
+                <span class="deck-strat">midrange</span>
+                <p>
+                  A very consistent deck made of discard, removal, and threats.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-types">
+        <div class="deck-types-info">
+          <h2 class="deck-types-header">Deck Types</h2>
+          <p>
+            Read more about deck types in magic the gathering, and how they
+            work.
+          </p>
+        </div>
+
+        <div class="deck-types-wrapper">
+          <div class="deck-type">
+            <div class="deck-type-image">
+              <img src="images/combo.png" alt="combo" />
+            </div>
+            <div class="deck-type-info">
+              <h3 class="deck-type-name">Combo</h3>
+            </div>
+          </div>
+
+          <div class="deck-type">
+            <div class="deck-type-image">
+              <img src="images/control.png" alt="control" />
+            </div>
+            <div class="deck-type-info">
+              <h3 class="deck-type-name">Control</h3>
+            </div>
+          </div>
+
+          <div class="deck-type">
+            <div class="deck-type-image">
+              <img src="images/aggro.png" alt="aggro" />
+            </div>
+            <div class="deck-type-info">
+              <h3 class="deck-type-name">Aggro</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <p>Website Design and Code by <span>Adam</span></p>
+    </footer>
+  </body>
+</html>
